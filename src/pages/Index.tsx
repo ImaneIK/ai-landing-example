@@ -1,11 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import NetworkBackground from '@/components/NetworkBackground';
+import HeroSection from '@/components/sections/HeroSection';
+import ObjectivesSection from '@/components/sections/ObjectivesSection';
+import ProgramSection from '@/components/sections/ProgramSection';
+import CertificationSection from '@/components/sections/CertificationSection';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="relative min-h-screen bg-background overflow-hidden">
+      {/* Animated Background */}
+      <NetworkBackground />
+      
+      {/* Content */}
+      <div className="relative z-10">
+        <HeroSection />
+        <ObjectivesSection />
+        <ProgramSection />
+        <CertificationSection />
       </div>
     </div>
   );
